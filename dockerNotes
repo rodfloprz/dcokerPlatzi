@@ -6,3 +6,7 @@ important to mention that if we use -d option docker is going to look for the en
 
 
 Mongo container has a binary "mongo" command to use it as a client and use the database
+
+use platzi
+
+db.users.insert({"nombre": "rodrigo"})
