@@ -3,3 +3,6 @@ To find a process inside a container we need to inspect out json file.
 docker inspect --format '{{.State.Pid}}' always-up
 
 important to mention that if we use -d option docker is going to look for the entry point section to execute the main command
+
+
+Mongo container has a binary "mongo" command to use it as a client and use the database
