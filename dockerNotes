@@ -1,0 +1,4 @@
+To find a process inside a container we need to inspect out json file.
+
+docker inspect --format '{{.State.Pid}}' always-up
+
