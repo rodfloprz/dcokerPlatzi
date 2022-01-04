@@ -31,4 +31,7 @@ Bind Mount: Guarda los archivos en la maquina local persistiendo y visualizando 
 Volume: Guarda los archivos en el area de Docker donde Docker los administra (Seguro).
 TMPFS Mount: Guarda los archivos temporalmente y persiste los datos en la memoria del contenedor, cuando muera sus datos mueren con el contenedor.
 
+Image tools:
+
+https://github.com/wagoodman/dive
 
