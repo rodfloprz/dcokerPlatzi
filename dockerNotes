@@ -10,3 +10,18 @@ Mongo container has a binary "mongo" command to use it as a client and use the d
 use platzi
 
 db.users.insert({"nombre": "rodrigo"})
+db.users.find()
+
+To persist (bind mounts)
+docker run -d --name db -v /Users/rfloresp/SEProjects/dockerPlatzi/mongodata:/data/db mongo
+
+volumenes
+
+docker volume create dbdata
+docker run -d --name db --mount src=dbdata,dst=/data/db mongo
+
+ingress
+docker cp ejemplo.txt copytest:/testing/test.txt
+
+extract
+docker cp copytest:/testing localtesting
