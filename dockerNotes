@@ -64,5 +64,12 @@ $ docker-compose up -d (crea los servicios/contenedores)
 $ docker-compose logs app (veo los logs de “app”)
 $ docker-compose logs -f app (hago un follow de los logs de “app”)
 
+Comandos:
+$ touch docker-compose.override.yml (creo el archivo override)
+$ docker-compose up -d (crea los servicios/contenedores)
+$ docker-compose exec app bash (entro al bash del contenedor app)
+$ docker-compose ps (veo los contenedores del compose)
+$ docker-compose up -d --scale app=2 (escalo dos instancias de app, previamente tengo que definir un rango de puertos en el archivo compose)
+$ docker-compose down (borro todo lo creado con compose)
 
 
