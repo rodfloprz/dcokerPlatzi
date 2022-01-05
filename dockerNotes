@@ -49,6 +49,16 @@ $ docker network connect plazinet db (conecto el contenedor “db” a la red �
 $ docker run -d -name app -p 3000:3000 --env MONGO_URL=mondodb://db:27017/test platzi (corro el contenedor “app” y le paso una variable)
 $ docker network connect plazinet app (conecto el contenedor “app” a la red “plazinet”)
 
+Comandos:
+$ docker network ls (listo las redes)
+$ docker network inspect docker_default (veo la definición de la red)
+$ docker-compose logs (veo todos los logs)
+$ docker-compose logs app (solo veo el log de “app”)
+$ docker-compose logs -f app (hago un follow del log de app)
+$ docker-compose exec app bash (entro al shell del contenedor app)
+$ docker-compose ps (veo los contenedores generados por docker compose)
+$ docker-compose down (borro todo lo generado por docker compose)
+
 
 
 
