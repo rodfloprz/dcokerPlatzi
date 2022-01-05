@@ -59,6 +59,10 @@ $ docker-compose exec app bash (entro al shell del contenedor app)
 $ docker-compose ps (veo los contenedores generados por docker compose)
 $ docker-compose down (borro todo lo generado por docker compose)
 
+$ docker-compose build (crea las imágenes)
+$ docker-compose up -d (crea los servicios/contenedores)
+$ docker-compose logs app (veo los logs de “app”)
+$ docker-compose logs -f app (hago un follow de los logs de “app”)
 
 
 
